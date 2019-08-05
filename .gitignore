@@ -1,0 +1,79 @@
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+android/app/src/main/assets/index.android.bundle
+ios/main.jsbundle
+ios/main.jsbundle.meta
+ios/GoogleService-Info.plist
+ios/RichPush.framework/
+android/app/google-services.json
+
+### CocoaPods ###
+Pods
+Podfile.lock
+
+# Android/IJ
+#
+*.iml
+.idea
+.gradle
+local.properties
+
+# node.js
+#
+node_modules/
+npm-debug.log
+
+# BUCK
+buck-out/
+\.buckd/
+android/keystores/debug.keystore
+
+# Visual Studio code
+.vscode/
+typings/
+
+# fastlane
+fastlane/report.xml
+fastlane/README.md
+PlanetPV.app.dSYM.zip
+PlanetPV.ipa
+
+# Android
+android/app/pvcp.planet.keystore
+
+# DocGen
+docs/docgen-input.json
+
+android/app/pvcp\.keystore
+
+#amplify
+amplify/\#current-cloud-backend
+amplify/.config/local-*
+amplify/backend/amplify-meta.json
+amplify/backend/awscloudformation
+build/
+dist/
+node_modules/
+aws-exports.js
+awsconfiguration.json
