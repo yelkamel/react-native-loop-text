@@ -13,7 +13,7 @@ React Native component for smooth text animation like Shazam app
 'use strict';
 
 import React  from 'react';
-import LoopText from 'react-native-swipe-gestures';
+import LoopText from 'react-native-loop-text';
 
 const SomeComponent = () => {
     return (
