@@ -25,7 +25,7 @@ const SomeComponent = () => {
 export default SomeComponent;
 ```
 
-Feel free to run or check the LoopTextSample project.
+Feel free to run or check the  [LoopTextSample](https://github.com/yelkamel/LoopTextSample) project.
 
 
 ## ℹ️ Props
