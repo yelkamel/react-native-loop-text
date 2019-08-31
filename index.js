@@ -3,6 +3,7 @@ import { Animated } from 'react-native';
 import PropTypes from 'prop-types';
 
 const getAnimationValue = (delay, duration, callBack) => {
+  let isMounted = true
   const animationValue = useRef(new Animated.Value(0)).current;
   const fadeInOut = () => {
     Animated.sequence([
@@ -20,13 +21,20 @@ const getAnimationValue = (delay, duration, callBack) => {
       }),
 
     ]).start(() => {
-      animationValue.setValue(0);
-      callBack()
-      fadeInOut();
+      if (isMounted) {
+        animationValue.setValue(0);
+        callBack()
+        fadeInOut();
+      }
     });
   };
   useEffect(() => {
     fadeInOut();
+
+    return () => {
+      animationValue.stopAnimation()
+      isMounted = false
+    }
   }, []);
   return (animationValue);
 };
